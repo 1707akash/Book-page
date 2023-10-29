@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Lato&family=Montserrat:wght@400;600&family=Open+Sans:wght@500;600&family=Orbitron:wght@500&family=Poppins&family=Roboto&family=Roboto+Condensed&family=Roboto+Serif:opsz@8..144&family=Tilt+Neon&display=swap');
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fa-solid fa-book-skull"></i>
+            <h1>Book</h1> 
+        </div>
+        <div class="right-corner">
+            <button id="toggleButton">Select Mode</button>
+            <a href="./signIn.html">Sign up <span><i id="" style="color: yellow;" class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    </div>
+
+    <!-- Here is the sidebar -->
+    <div class="sidebar">
+        <div class="list">
+            <ul>
+                <li id="All" class="pop">ALL CATEGORIES</li>
+                <li id="Mis" class="pop">Advice how-to and Miscellaneous</li>
+                <li id="AudioF" class="pop">Audio Fiction</li>
+                <li id="AudioNon" class="pop">Audio Nonfiction</li>		
+                <li id="BusiBook" class="pop">Business Books</li>
+                <li id="ChildG" class="pop">Childrens Middle Grade Hardcover</li>
+                <li id="E-bookFic" class="pop">Combined Print and E-Book Fiction</li>
+                <li id="E-bookNonFic" class="pop">Combined Print and E-Book Nonfiction</li>
+                <li id="GManga" class="pop">Graphic Books and Manga</li>
+                <li id="HFic" class="pop">Hardcover Fiction</li>
+                <li id="HNFic" class="pop">Hardcover Nonfiction</li>
+                <li id="MMM" class="pop">Mass Market Monthly</li>
+                <li id="paper_back" class="pop">Middle Grade Paperback Monthly</li>
+                <li id="paper_backNfic" class="pop">Paperback Nonfiction</li>
+                <li id="Pic_books" class="pop">Picture	Books</li>
+                <li id="S_books" class="pop">Series Books</li>
+                <li id="Trade_fic" class="pop">Trade Fiction Paperback</li>
+                <li id="YoungAdult" class="pop">Young Adult Hardcover</li>
+                <li id="YounAdultPap" class="pop">Young Adult Paperback Monthly</li>
+            </ul>
+        </div>
+        <div id="books"></div>
+        <dialog id="modal">
+            <form method="dialog">
+                <div class="close">
+                    <button><i class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+                <div class="flex-cont">
+                    <div id="Image-cont"></div>
+                    <div id="text">
+                        <h1 id="title"></h1>
+                        <span id="auth"></span>
+                        <ul id="buylist"></ul>
+                    </div>
+                </div>
+                <div class="btn-div">
+                    <button class="cart">ADD TO SHOPPING LIST</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
